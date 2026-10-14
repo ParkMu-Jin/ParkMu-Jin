@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="260" viewBox="0 0 1000 260">
+  <defs>
+    <linearGradient id="rayo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DCE6FF"/>
+      <stop offset="1" stop-color="#2F63FF"/>
+    </linearGradient>
+    <filter id="brillo" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <polygon id="b" points="34,0 8,70 26,70 14,130 52,52 32,52 46,0"/>
+  </defs>
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Consolas, "DejaVu Sans Mono", monospace; }
+    .t { font-size: 14px; font-weight: 700; fill: #DCE6FF; }
+    .i { font-size: 12px; fill: #9DB8FF; }
+    .a { font-size: 12px; font-weight: 700; fill: #4D7CFF; text-anchor: middle; }
+  </style>
+
+  <g transform="translate(0 0)">
+    <rect width="490" height="120" rx="10" fill="#0d1117" stroke="#2F63FF" stroke-opacity="0.5">
+      <animate attributeName="stroke-opacity" values="0.3;0.9;0.3" dur="4s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0" y="16" width="4" height="88" fill="#2F63FF"/>
+    <use href="#b" fill="url(#rayo)" filter="url(#brillo)" transform="translate(24 28) scale(0.5)"/>
+    <text class="t" x="76" y="58">Fundamentos de Scrum</text>
+    <text class="i" x="76" y="84">Soy Líder.Net</text>
+    <rect x="404" y="14" width="68" height="24" rx="4" fill="#0A1E6E" stroke="#2F63FF" stroke-opacity="0.6"/>
+    <text class="a" x="438" y="31">2026</text>
+  </g>
+
+  <g transform="translate(510 0)">
+    <rect width="490" height="120" rx="10" fill="#0d1117" stroke="#2F63FF" stroke-opacity="0.5">
+      <animate attributeName="stroke-opacity" values="0.3;0.9;0.3" dur="4s" begin="1s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0" y="16" width="4" height="88" fill="#2F63FF"/>
+    <use href="#b" fill="url(#rayo)" filter="url(#brillo)" transform="translate(24 28) scale(0.5)"/>
+    <text class="t" x="76" y="58">IA sin Límites</text>
+    <text class="i" x="76" y="84">Skilling Panamá, AWS y Ministerio de Educación</text>
+    <rect x="404" y="14" width="68" height="24" rx="4" fill="#0A1E6E" stroke="#2F63FF" stroke-opacity="0.6"/>
+    <text class="a" x="438" y="31">2026</text>
+  </g>
+
+  <g transform="translate(0 140)">
+    <rect width="490" height="120" rx="10" fill="#0d1117" stroke="#2F63FF" stroke-opacity="0.5">
+      <animate attributeName="stroke-opacity" values="0.3;0.9;0.3" dur="4s" begin="2s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0" y="16" width="4" height="88" fill="#2F63FF"/>
+    <use href="#b" fill="url(#rayo)" filter="url(#brillo)" transform="translate(24 28) scale(0.5)"/>
+    <text class="t" x="76" y="48">PyTorch and Deep Learning</text>
+    <text class="t" x="76" y="68">for Decision Makers</text>
+    <text class="i" x="76" y="96">The Linux Foundation</text>
+    <rect x="404" y="14" width="68" height="24" rx="4" fill="#0A1E6E" stroke="#2F63FF" stroke-opacity="0.6"/>
+    <text class="a" x="438" y="31">2026</text>
+  </g>
+
+  <g transform="translate(510 140)">
+    <rect width="490" height="120" rx="10" fill="#0d1117" stroke="#2F63FF" stroke-opacity="0.5">
+      <animate attributeName="stroke-opacity" values="0.3;0.9;0.3" dur="4s" begin="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0" y="16" width="4" height="88" fill="#2F63FF"/>
+    <use href="#b" fill="url(#rayo)" filter="url(#brillo)" transform="translate(24 28) scale(0.5)"/>
+    <text class="t" x="76" y="48">Inmersión en Inteligencia Artificial</text>
+    <text class="t" x="76" y="68">en la Práctica</text>
+    <text class="i" x="76" y="96">Daxus Latam</text>
+    <rect x="404" y="14" width="68" height="24" rx="4" fill="#0A1E6E" stroke="#2F63FF" stroke-opacity="0.6"/>
+    <text class="a" x="438" y="31">2026</text>
+  </g>
+</svg>
