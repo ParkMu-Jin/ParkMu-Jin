@@ -1,15 +1,15 @@
 <p align="center">
-  <img src="./header.svg" width="100%" alt="SAXUM DEV" />
+  <img src="./header.svg?v=3" width="100%" alt="SAXUM DEV" />
 </p>
 
 <p align="center">
-  <img src="./neofetch.svg" width="100%" alt="saxum@github" />
+  <img src="./neofetch.svg?v=3" width="100%" alt="saxum@github" />
 </p>
 
 <h2 align="center">ϟ CERTIFICACIONES ϟ</h2>
 
 <p align="center">
-  <img src="./certificaciones.svg" width="100%" alt="Certificaciones" />
+  <img src="./certificaciones.svg?v=3" width="100%" alt="Certificaciones" />
 </p>
 
 <h2 align="center">ϟ TECNOLOGÍAS ϟ</h2>
@@ -36,7 +36,7 @@
 <h2 align="center">ϟ PROYECTOS ϟ</h2>
 
 <p align="center">
-  <img src="./proyectos.svg" width="100%" alt="Proyectos" />
+  <img src="./proyectos.svg?v=3" width="100%" alt="Proyectos" />
 </p>
 
 <h2 align="center">ϟ ESTADÍSTICAS ϟ</h2>
