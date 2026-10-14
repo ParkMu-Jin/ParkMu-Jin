@@ -1,76 +1,83 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" width="860" height="540" viewBox="0 0 860 540">
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="280" viewBox="0 0 1000 280">
   <defs>
-    <linearGradient id="rayo" gradientUnits="userSpaceOnUse" x1="0" y1="70" x2="0" y2="510">
-      <stop offset="0" stop-color="#BFD0FF"/>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#02040a"/>
+      <stop offset="1" stop-color="#0a1647"/>
+    </linearGradient>
+    <linearGradient id="rayo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DCE6FF"/>
       <stop offset="1" stop-color="#2F63FF"/>
     </linearGradient>
-    <filter id="brillo" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="2.5" result="b"/>
-      <feMerge><feMergeNode in="b"/><feMergeNode in="SourceGraphic"/></feMerge>
+    <pattern id="rejilla" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M40 0H0V40" fill="none" stroke="#2F63FF" stroke-opacity="0.18"/>
+    </pattern>
+    <pattern id="lineas" width="4" height="4" patternUnits="userSpaceOnUse">
+      <rect width="4" height="1.5" fill="#000" fill-opacity="0.35"/>
+    </pattern>
+    <filter id="brillo" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="4" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
     </filter>
+    <polygon id="b" points="34,0 8,70 26,70 14,130 52,52 32,52 46,0"/>
   </defs>
   <style>
-    text { font-family: ui-monospace, SFMono-Regular, Consolas, "DejaVu Sans Mono", monospace; font-size: 14px; white-space: pre; }
-    .p { fill: #3a4a7a; }
-    .k { fill: #4D7CFF; }
-    .v { fill: #DCE6FF; }
-    .s { fill: #2F63FF; }
-    .c { fill: #6b7aa8; }
+    text { font-family: ui-monospace, SFMono-Regular, Consolas, "DejaVu Sans Mono", monospace; }
+    .titulo { font-size: 88px; font-weight: 700; letter-spacing: 4px; text-anchor: middle; }
+    .sub { font-size: 17px; letter-spacing: 6px; text-anchor: middle; fill: #9DB8FF; }
+    .hud { font-size: 12px; fill: #4D7CFF; letter-spacing: 2px; }
+    .info { font-size: 14px; text-anchor: middle; fill: #DCE6FF; letter-spacing: 2px; }
   </style>
 
-  <rect x="1" y="1" width="858" height="538" rx="12" fill="#0d1117" stroke="#2F63FF" stroke-opacity="0.6"/>
-  <circle cx="28" cy="26" r="6" fill="#2F63FF"/>
-  <circle cx="48" cy="26" r="6" fill="#1d3fa8"/>
-  <circle cx="68" cy="26" r="6" fill="#0f2266"/>
-  <text x="430" y="30" text-anchor="middle" class="c" style="font-size:12px">saxum@github: ~</text>
+  <rect width="1000" height="280" rx="12" fill="url(#fondo)"/>
+  <rect width="1000" height="280" rx="12" fill="url(#rejilla)"/>
+  <rect width="1000" height="280" rx="12" fill="url(#lineas)"/>
 
-  <g fill="url(#rayo)" filter="url(#brillo)" xml:space="preserve">
-    <text x="40" y="70" xml:space="preserve">              ░▒▓████▓▒░</text>
-    <text x="40" y="90" xml:space="preserve">             ░▒▓████▓▒░</text>
-    <text x="40" y="110" xml:space="preserve">            ░▒▓████▓▒░</text>
-    <text x="40" y="130" xml:space="preserve">           ░▒▓████▓▒░</text>
-    <text x="40" y="150" xml:space="preserve">          ░▒▓████▓▒░</text>
-    <text x="40" y="170" xml:space="preserve">         ░▒▓████▓▒░</text>
-    <text x="40" y="190" xml:space="preserve">        ░▒▓████▓▒░</text>
-    <text x="40" y="210" xml:space="preserve">       ░▒▓████▓▒░</text>
-    <text x="40" y="230" xml:space="preserve">      ░▒▓█████████████▓▒░</text>
-    <text x="40" y="250" xml:space="preserve">      ░▒▓█████████████▓▒░</text>
-    <text x="40" y="270" xml:space="preserve">             ░▒▓████▓▒░</text>
-    <text x="40" y="290" xml:space="preserve">            ░▒▓████▓▒░</text>
-    <text x="40" y="310" xml:space="preserve">           ░▒▓████▓▒░</text>
-    <text x="40" y="330" xml:space="preserve">          ░▒▓████▓▒░</text>
-    <text x="40" y="350" xml:space="preserve">         ░▒▓████▓▒░</text>
-    <text x="40" y="370" xml:space="preserve">        ░▒▓████▓▒░</text>
-    <text x="40" y="390" xml:space="preserve">       ░▒▓████▓▒░</text>
-    <text x="40" y="410" xml:space="preserve">      ░▒▓████▓▒░</text>
-    <text x="40" y="430" xml:space="preserve">     ░▒▓████▓▒░</text>
-    <text x="40" y="450" xml:space="preserve">    ░▒▓████▓▒░</text>
-    <text x="40" y="470" xml:space="preserve">    ░▒▓██▓▒░</text>
-    <text x="40" y="490" xml:space="preserve">    ░▒▓█▒░</text>
-    <text x="40" y="510" xml:space="preserve">     ░▒░</text>
+  <g fill="url(#rayo)" filter="url(#brillo)">
+    <use href="#b" transform="translate(70 60) scale(1.2)">
+      <animate attributeName="opacity" values="1;1;0.3;1;0.6;1;1" dur="3s" repeatCount="indefinite"/>
+    </use>
+    <use href="#b" transform="translate(150 150) scale(0.6)">
+      <animate attributeName="opacity" values="0.6;1;0.4;1;0.6" dur="2.2s" repeatCount="indefinite"/>
+    </use>
+    <use href="#b" transform="translate(880 60) scale(1.2)">
+      <animate attributeName="opacity" values="1;0.5;1;1;0.3;1" dur="3.4s" repeatCount="indefinite"/>
+    </use>
+    <use href="#b" transform="translate(810 150) scale(0.6)">
+      <animate attributeName="opacity" values="1;0.4;1;0.7;1" dur="2.6s" repeatCount="indefinite"/>
+    </use>
   </g>
 
-  <text x="330" y="120" xml:space="preserve"><tspan class="k">saxum@github </tspan><tspan class="s">───────────────────────────────────────────</tspan></text>
+  <rect x="0" y="-40" width="1000" height="40" fill="#4D7CFF" fill-opacity="0.07">
+    <animate attributeName="y" values="-40;280" dur="5s" repeatCount="indefinite"/>
+  </rect>
 
-  <text x="330" y="140" xml:space="preserve"><tspan class="p">. </tspan><tspan class="k">Estado</tspan><tspan class="p">: ............................. </tspan><tspan class="v">Activo (estable)</tspan></text>
-  <text x="330" y="160" xml:space="preserve"><tspan class="p">. </tspan><tspan class="k">SO</tspan><tspan class="p">: ........................................ </tspan><tspan class="v">Saxum Dev</tspan></text>
-  <text x="330" y="180" xml:space="preserve"><tspan class="p">. </tspan><tspan class="k">Uptime</tspan><tspan class="p">: ...................................... </tspan><tspan class="v">21 años</tspan></text>
-  <text x="330" y="200" xml:space="preserve"><tspan class="p">. </tspan><tspan class="k">Host</tspan><tspan class="p">: ......................................... </tspan><tspan class="v">Panamá</tspan></text>
-  <text x="330" y="220" xml:space="preserve"><tspan class="p">. </tspan><tspan class="k">Kernel</tspan><tspan class="p">: ............. </tspan><tspan class="v">Desarrollo y Gestión de Software</tspan></text>
-  <text x="330" y="240" xml:space="preserve"><tspan class="p">. </tspan><tspan class="k">Entorno</tspan><tspan class="p">: .......................... </tspan><tspan class="v">Git, GitHub, Linux</tspan></text>
-  <text x="330" y="260" xml:space="preserve"><tspan class="p">. </tspan><tspan class="k">Lenguajes</tspan><tspan class="p">: ............... </tspan><tspan class="v">PHP, Kotlin, VB.NET, Python</tspan></text>
-  <text x="330" y="280" xml:space="preserve"><tspan class="p">. </tspan><tspan class="k">Enfoque</tspan><tspan class="p">: ............ </tspan><tspan class="v">Full Stack Web, Android, Backend</tspan></text>
-  <text x="330" y="300" xml:space="preserve"><tspan class="p">. </tspan><tspan class="k">Intereses</tspan><tspan class="p">: .............. </tspan><tspan class="v">Web, Android, Bases de datos</tspan></text>
+  <g fill="none" stroke="#2F63FF" stroke-width="2" stroke-opacity="0.8">
+    <path d="M16 40V16H40"/>
+    <path d="M960 16H984V40"/>
+    <path d="M16 240V264H40"/>
+    <path d="M960 264H984V240"/>
+  </g>
 
-  <text x="330" y="320" xml:space="preserve"><tspan class="v">- Contacto </tspan><tspan class="s">─────────────────────────────────────────────</tspan></text>
+  <circle cx="34" cy="34" r="4" fill="#4D7CFF">
+    <animate attributeName="opacity" values="1;0.2;1" dur="1.4s" repeatCount="indefinite"/>
+  </circle>
+  <text class="hud" x="46" y="38">SYS.ONLINE</text>
+  <text class="hud" x="966" y="38" text-anchor="end">PA // UTC-5</text>
 
-  <text x="330" y="340" xml:space="preserve"><tspan class="p">. </tspan><tspan class="k">Zona horaria</tspan><tspan class="p">: .................................. </tspan><tspan class="v">UTC-5</tspan></text>
-  <text x="330" y="360" xml:space="preserve"><tspan class="p">. </tspan><tspan class="k">Instagram</tspan><tspan class="p">: .................................... </tspan><tspan class="v">_saxum</tspan></text>
-  <text x="330" y="380" xml:space="preserve"><tspan class="p">. </tspan><tspan class="k">X</tspan><tspan class="p">: .......................................... </tspan><tspan class="v">@ARSAXUM</tspan></text>
-  <text x="330" y="400" xml:space="preserve"><tspan class="p">. </tspan><tspan class="k">GitHub</tspan><tspan class="p">: ................................... </tspan><tspan class="v">ParkMu-Jin</tspan></text>
+  <g filter="url(#brillo)">
+    <text class="titulo" x="500" y="150" fill="#2F63FF" fill-opacity="0.6">SAXUM DEV
+      <animate attributeName="x" values="500;500;500;506;494;500;500;500" dur="4s" repeatCount="indefinite"/>
+    </text>
+    <text class="titulo" x="500" y="150" fill="#4D7CFF">SAXUM DEV</text>
+  </g>
 
-  <text x="330" y="440" xml:space="preserve" class="c">// Código a la velocidad del rayo.</text>
-
-  <text x="330" y="490" xml:space="preserve"><tspan class="k">saxum@github</tspan><tspan class="v">:~$ </tspan><tspan class="s">█<animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/></tspan></text>
+  <text class="sub" x="500" y="188">DESARROLLO Y GESTIÓN DE SOFTWARE</text>
+  <text class="info" x="500" y="232">PANAMÁ  |  21 AÑOS  |  FULL STACK  |  ANDROID  |  IA</text>
+  <text class="hud" x="500" y="256" text-anchor="middle">_
+    <animate attributeName="opacity" values="1;0;1" dur="1.2s" repeatCount="indefinite"/>
+  </text>
 </svg>
