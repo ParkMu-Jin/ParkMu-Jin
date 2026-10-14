@@ -1,0 +1,115 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="440" viewBox="0 0 1000 440">
+  <defs>
+    <linearGradient id="rayo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#DCE6FF"/>
+      <stop offset="1" stop-color="#2F63FF"/>
+    </linearGradient>
+    <linearGradient id="fondoDestacado" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#0a1647"/>
+    </linearGradient>
+    <filter id="brillo" x="-40%" y="-40%" width="180%" height="180%">
+      <feGaussianBlur stdDeviation="3" result="b"/>
+      <feMerge>
+        <feMergeNode in="b"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <polygon id="b" points="34,0 8,70 26,70 14,130 52,52 32,52 46,0"/>
+  </defs>
+  <style>
+    text { font-family: ui-monospace, SFMono-Regular, Consolas, "DejaVu Sans Mono", monospace; }
+    .n { font-size: 18px; font-weight: 700; fill: #DCE6FF; }
+    .d { font-size: 12px; fill: #9DB8FF; }
+    .s { font-size: 12px; font-weight: 700; fill: #4D7CFF; }
+    .c { font-size: 12px; fill: #2F63FF; }
+    .tg { font-size: 26px; font-weight: 700; fill: #4D7CFF; letter-spacing: 3px; }
+    .dd { font-size: 13px; fill: #DCE6FF; }
+    .tag { font-size: 11px; font-weight: 700; fill: #9DB8FF; text-anchor: middle; }
+    .bd { font-size: 11px; font-weight: 700; fill: #4D7CFF; text-anchor: middle; letter-spacing: 1px; }
+  </style>
+
+  <g transform="translate(0 0)">
+    <rect width="1000" height="160" rx="12" fill="url(#fondoDestacado)" stroke="#2F63FF" stroke-opacity="0.7">
+      <animate attributeName="stroke-opacity" values="0.4;1;0.4" dur="3s" repeatCount="indefinite"/>
+    </rect>
+    <rect x="0" y="20" width="4" height="120" fill="#2F63FF"/>
+    <use href="#b" fill="url(#rayo)" filter="url(#brillo)" transform="translate(28 28) scale(0.8)">
+      <animate attributeName="opacity" values="1;1;0.4;1;0.7;1;1" dur="3s" repeatCount="indefinite"/>
+    </use>
+    <text class="tg" x="90" y="40">MINISERVER</text>
+    <rect x="880" y="14" width="96" height="24" rx="4" fill="#0A1E6E" stroke="#2F63FF" stroke-opacity="0.6"/>
+    <text class="bd" x="928" y="30">DESTACADO</text>
+    <text class="dd" x="90" y="68">Servidor de Minecraft que corre con los recursos de tu computadora para jugar con amigos.</text>
+    <text class="dd" x="90" y="88">Funciona en red local o mediante un túnel que genera una IP y un puerto remoto.</text>
+    <text class="dd" x="90" y="108">Exclusivo para Bedrock y funcional con mods.</text>
+    <rect x="90" y="122" width="80" height="22" rx="4" fill="#0A1E6E" stroke="#2F63FF" stroke-opacity="0.6"/>
+    <text class="tag" x="130" y="137">BEDROCK</text>
+    <rect x="180" y="122" width="64" height="22" rx="4" fill="#0A1E6E" stroke="#2F63FF" stroke-opacity="0.6"/>
+    <text class="tag" x="212" y="137">MODS</text>
+    <rect x="254" y="122" width="96" height="22" rx="4" fill="#0A1E6E" stroke="#2F63FF" stroke-opacity="0.6"/>
+    <text class="tag" x="302" y="137">RED LOCAL</text>
+    <rect x="360" y="122" width="130" height="22" rx="4" fill="#0A1E6E" stroke="#2F63FF" stroke-opacity="0.6"/>
+    <text class="tag" x="425" y="137">TÚNEL REMOTO</text>
+  </g>
+
+  <g transform="translate(0 180)">
+    <rect width="320" height="120" rx="10" fill="#0d1117" stroke="#2F63FF" stroke-opacity="0.5">
+      <animate attributeName="stroke-opacity" values="0.3;0.9;0.3" dur="5s" repeatCount="indefinite"/>
+    </rect>
+    <text class="c" x="20" y="28">&lt;/&gt;</text>
+    <text class="n" x="20" y="54">DACHI</text>
+    <text class="d" x="20" y="76">Marketplace agrícola</text>
+    <text class="s" x="20" y="100">PHP  ·  MySQL</text>
+  </g>
+
+  <g transform="translate(340 180)">
+    <rect width="320" height="120" rx="10" fill="#0d1117" stroke="#2F63FF" stroke-opacity="0.5">
+      <animate attributeName="stroke-opacity" values="0.3;0.9;0.3" dur="5s" begin="0.8s" repeatCount="indefinite"/>
+    </rect>
+    <text class="c" x="20" y="28">&lt;/&gt;</text>
+    <text class="n" x="20" y="54">KENJI</text>
+    <text class="d" x="20" y="76">Gestión de empleados</text>
+    <text class="s" x="20" y="100">Kotlin  ·  PHP</text>
+  </g>
+
+  <g transform="translate(680 180)">
+    <rect width="320" height="120" rx="10" fill="#0d1117" stroke="#2F63FF" stroke-opacity="0.5">
+      <animate attributeName="stroke-opacity" values="0.3;0.9;0.3" dur="5s" begin="1.6s" repeatCount="indefinite"/>
+    </rect>
+    <text class="c" x="20" y="28">&lt;/&gt;</text>
+    <text class="n" x="20" y="54">COCOLI</text>
+    <text class="d" x="20" y="76">Incidentes universitarios</text>
+    <text class="s" x="20" y="100">Kotlin  ·  XML</text>
+  </g>
+
+  <g transform="translate(0 320)">
+    <rect width="320" height="120" rx="10" fill="#0d1117" stroke="#2F63FF" stroke-opacity="0.5">
+      <animate attributeName="stroke-opacity" values="0.3;0.9;0.3" dur="5s" begin="2.4s" repeatCount="indefinite"/>
+    </rect>
+    <text class="c" x="20" y="28">&lt;/&gt;</text>
+    <text class="n" x="20" y="54">DSVII</text>
+    <text class="d" x="20" y="76">Quejas y sugerencias ciudadanas</text>
+    <text class="s" x="20" y="100">PHP  ·  MySQL  ·  MVC</text>
+  </g>
+
+  <g transform="translate(340 320)">
+    <rect width="320" height="120" rx="10" fill="#0d1117" stroke="#2F63FF" stroke-opacity="0.5">
+      <animate attributeName="stroke-opacity" values="0.3;0.9;0.3" dur="5s" begin="3.2s" repeatCount="indefinite"/>
+    </rect>
+    <text class="c" x="20" y="28">&lt;/&gt;</text>
+    <text class="n" x="20" y="54">LANCET</text>
+    <text class="d" x="20" y="76">Gestión de reclutamiento</text>
+    <text class="s" x="20" y="100">PHP  ·  MySQL</text>
+  </g>
+
+  <g transform="translate(680 320)">
+    <rect width="320" height="120" rx="10" fill="#0d1117" stroke="#2F63FF" stroke-opacity="0.5">
+      <animate attributeName="stroke-opacity" values="0.3;0.9;0.3" dur="5s" begin="4s" repeatCount="indefinite"/>
+    </rect>
+    <text class="c" x="20" y="28">&lt;/&gt;</text>
+    <text class="n" x="20" y="54">WHITEMAGIC</text>
+    <text class="d" x="20" y="76">Catálogo de productos</text>
+    <text class="s" x="20" y="100">Web  ·  Android</text>
+  </g>
+</svg>
